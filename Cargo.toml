@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "day-1-not-quite-lisp",
+    "day-2-i-was-told-there-would-be-no-math",
+]
