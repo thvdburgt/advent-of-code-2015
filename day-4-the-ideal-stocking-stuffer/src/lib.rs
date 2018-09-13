@@ -27,12 +27,12 @@ where
 
 pub fn solve_puzzle_part_1(input: &str) -> u64 {
     mine_advent_coin(&(input.as_bytes()), |a| {
-        a[0] as u32 + a[1] as u32 + (a[2] >> 4) as u32 == 0
+        u32::from(a[0]) + u32::from(a[1]) + u32::from(a[2] >> 4) == 0
     })
 }
 
 pub fn solve_puzzle_part_2(input: &str) -> u64 {
     mine_advent_coin(&(input.as_bytes()), |a| {
-        a[0] as u32 + a[1] as u32 + a[2] as u32 == 0
+        u32::from(a[0]) + u32::from(a[1]) + u32::from(a[2]) == 0
     })
 }

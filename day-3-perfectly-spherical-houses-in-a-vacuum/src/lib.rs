@@ -1,6 +1,6 @@
 use std::collections::HashSet;
 
-fn visit(c: char, x: &mut i32, y: &mut i32, ref mut visited_locations: &mut HashSet<(i32, i32)>) {
+fn visit(c: char, x: &mut i32, y: &mut i32, visited_locations: &mut HashSet<(i32, i32)>) {
     match c {
         '>' => *x += 1,
         '<' => *x -= 1,
