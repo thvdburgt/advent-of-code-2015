@@ -3,4 +3,5 @@ members = [
     "day-1-not-quite-lisp",
     "day-2-i-was-told-there-would-be-no-math",
     "day-3-perfectly-spherical-houses-in-a-vacuum",
+    "day-4-the-ideal-stocking-stuffer",
 ]
