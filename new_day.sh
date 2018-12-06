@@ -31,3 +31,7 @@ cp -r template "$DIR"
 
 # Convert occurances of day-x and day_x to correct day
 fd -t f -x sed -i "s/day\(-\|_\)x/day\1$1/g" "{}" \; ".*" "$DIR"
+
+# Add directory as member to workspace
+MEMBER="\ \ \ \ \"$DIR\","
+sed -i "/^\]$/i $MEMBER" Cargo.toml
